@@ -1,0 +1,280 @@
+$bckg-green: #27AD60;
+$trans: transparent;
+$bckg-gray: #334556;
+$txt-white: #FFFFFF;
+$txt-80: 80px;
+$txt-30: 30px;
+
+/*HEADER*/
+html {
+	font-family:'Roboto', 'Open Sans',Arial, Sans-serif;
+}
+header {
+	background-color: $bckg-green;
+	width: 100%;
+	height: 100px;
+}
+	.navbar-inverse {
+		.navbar-nav > li > a:hover {
+			background-color:$trans;
+		}
+		.navbar-nav > li > a:focus {
+			background-color:$trans;
+		}
+	}
+	.navbar-fixed-top {
+		.nav {
+			padding-top: 30px;
+		}
+		.navbar-brand:hover, .navbar-brand:focus {
+			background-color: $trans;
+		}
+	}
+	.navbar-nav{
+		float: right;
+		position: static !important;
+	}
+	.collapse {
+		background-color: $bckg-green;
+	}
+	.navbar-collapse {
+			background-color: $bckg-green;
+		}
+/*SECCIÓN 1*/
+/*IMAGEN FONDO*/
+.back-carousel {
+	background-image: url(../img/carousel-bg.jpg);
+	width: 100%;
+	height: 700px;
+	background-repeat: no-repeat;
+	color: $txt-white;
+	padding-top: 150px;
+}
+.txt-80 {
+	font-size: $txt-80;
+}
+.txt-30 {
+	font-size: $txt-30;
+}
+/*SECCIÓN 2*/
+/*PALETA DE COLORES*/
+.not-padding [class*="col-"] {
+	padding: 5px 0;
+	@mixin paleta($color,$bckg-gray) {
+		background:$color;
+		color: $bckg-gray;
+		height: 150px;
+		width: 200px;
+		display: inline-block;
+	}
+	/*fila uno*/
+	.uno {
+		@include paleta(#69D2E7,$bckg-gray);
+	}
+	.dos {
+		@include paleta(#A7DBDB,$bckg-gray);
+	}
+	.tres {
+		@include paleta(#E0E4CC,$bckg-gray);
+	}
+	.cuatro {
+		@include paleta(#F38630,$bckg-gray);
+	}
+	.cinco  {
+		@include paleta(#FA6900,$bckg-gray);
+	}
+	/*fila dos*/
+	.seis {
+		@include paleta(#E94C6F,$bckg-gray);
+	}
+	.siete  {
+		@include paleta(#542733,$txt-white);
+	}
+	.ocho {
+		@include paleta(#5A6A62,$bckg-gray);
+	}
+	.nueve {
+		@include paleta(#C6D5CD,$bckg-gray);
+	}
+	.diez {
+		@include paleta(#FDF200,$bckg-gray);
+	}
+	/*fila tres*/
+	.once {
+		@include paleta(#DB3340,$bckg-gray);
+	}
+	.doce {
+		@include paleta(#E8B71A,$bckg-gray);
+	}
+	.trece {
+		@include paleta(#F7EAC8,$bckg-gray);
+	}
+	.catorce {
+		@include paleta(#1FDA9A,$bckg-gray);
+	}
+	.quince {
+		@include paleta(#28ABE3,$bckg-gray);
+	}
+	/*fila cuatro*/
+	.dieciseis {
+		@include paleta(#588C73,$bckg-gray);
+	}
+	.diecisite {
+		@include paleta(#F2E394,$bckg-gray);
+	}
+	.dieciocho {
+		@include paleta(#F2AE72,$bckg-gray);
+	}
+	.diecinueve {
+		@include paleta(#D96459,$bckg-gray);
+	}
+	.veinte {
+		@include paleta(#8C4646,$bckg-gray);
+	}
+	/*fila cinco*/
+	.veintiuno {
+		@include paleta(#D0C91F,$bckg-gray);
+		margin-bottom: 20px;
+	}
+	.veintidos {
+		@include paleta(#85C4B9,$bckg-gray);
+		margin-bottom: 20px;
+	}
+	.veintitres {
+		@include paleta(#008BBA,$bckg-gray);
+		margin-bottom: 20px;
+	}
+	.veinticuatro {
+		@include paleta(#DF514C,$bckg-gray);
+		margin-bottom: 20px;
+	}
+	.veinticinco {
+		@include paleta(#DC403B,$bckg-gray);
+		margin-bottom: 20px;
+	}
+}
+/*SECCIÓN 3*/
+/*ABOUT US*/
+.back-gray {
+	background-color: $bckg-gray;
+	color: $txt-white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+hr {
+	width: 300px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+/*SECCIÓN 4*/
+/*WHAT WE DO*/
+.back-green {
+	background-color: $bckg-green;
+	color: $txt-white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.mrg-top100 {
+	margin-top: 100px;
+}
+.mrg-bot50 {
+	margin-bottom: 50px;
+}
+/*SECCIÓN 5*/
+/*OUR AWESOME TEAM*/
+.txt-black {
+	color: black;
+}
+.hr-orange {
+	width: 200px;
+    border: 1px dashed orange;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+.txt-gray {
+	color: #C3C3C3;
+}
+.c-gray {
+	color: #C3C3C3;
+}
+span {
+	/*iconos redes sociales*/
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 25px;
+}
+/*SECCIÓN 6*/
+/*BEST PRICE GURANTEED*/
+.box-green {
+	width: 100%;
+	height: 100% auto;
+	border: 1px solid #27AD60;
+	margin-top: 150px;
+}
+.renglontitle-orange {
+	background-color: rgba(255, 137, 44, 0.6);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.renglon-green {
+	background-color: $bckg-green;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.renglon-orange {
+	background-color: rgba(255, 137, 44, 0.6);
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.renglon-white {
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.renglontitle-none {
+	background-color: none;
+	padding-top: 30px;
+	padding-bottom: 30px;	
+}
+.renglon-none {
+	background-color: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+button {
+	margin-top: 50px !important;
+	margin-bottom: 50px !important;
+}
+/*SECCIÓN 7*/
+/*WHAT OUR CLIENTS SAY*/
+.txt-orange {
+	color: orange;
+}
+.txt-20 {
+	font-size: 20px;
+}
+/*SECCIÓN 8*/
+/*REDES SOCIALES*/
+.img-trigos {
+	background-image: url(../img/img-divider-img.jpg);
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: static;
+	background-position: 0px -75px;
+}
+.img-trigosbig {
+	background-image: url(../img/img-divider-img.jpg);
+	width: 100%;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 100px;
+}
+.icons {
+	padding-right: 30px;
+	padding-left: 30px;
+}
